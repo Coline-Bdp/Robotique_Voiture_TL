@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+.tools_car{
+    display: flex;
+    flex-flow: row;
+    background-color: pink;
+    width: 100%;
+}
+
+.power{
+    display: flex;
+    flex-flow: row;
+    background-color: blue;
+    width: 30%;
+}
+
+.control_car{
+    display: flex;
+    flex-flow: row;
+    justify-content : center;
+    background-color: green;
+    width: 70%;
+}
+
+.arrows_control {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+}
+
+.left_right {
+    display: flex;
+    flex-flow: row;
+}
+
+.others_controls{
+    display: flex;
+    flex-flow: column;
+    background-color: yellow;
+    width: 60%;
+}
+
+.catapult{
+    display: flex;
+    background-color: violet;
+    height: 40%;
+}
+
+.auto_control{
+    display: flex;
+    background-color: red ;
+    height: 60%;
+}
