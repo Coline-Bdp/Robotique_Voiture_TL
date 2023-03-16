@@ -5,10 +5,10 @@ int main() {
     Py_Initialize();
 
     
-     PyObject *obj = Py_BuildValue("s", "controlcar.py");
+     PyObject *obj = Py_BuildValue("s", "control_car.py");
     FILE *file = _Py_fopen_obj(obj, "r+");
     if(file != NULL) {
-     PyRun_SimpleFile(file, "controlcar.py");
+     PyRun_SimpleFile(file, "control_car.py");
     }
     
     /*
