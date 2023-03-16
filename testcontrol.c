@@ -4,8 +4,16 @@
 int main() {
     Py_Initialize();
 
+    
+     PyObject *obj = Py_BuildValue("s", "controlcar.py");
+    FILE *file = _Py_fopen_obj(obj, "r+");
+    if(file != NULL) {
+     PyRun_SimpleFile(file, "controlcar.py");
+    }
+    
+    /*
     // Importe le module Python contenant la fonction set_motor_speeds
-    PyObject* module = PyImport_ImportModule("motor_control");
+    PyObject* module = PyImport_ImportModule("controlcar.py");
     if (!module) {
         PyErr_Print();
         return 1;
@@ -28,6 +36,7 @@ int main() {
     Py_DECREF(module);
 
     Py_Finalize();
+    */
 
     return 0;
 }
